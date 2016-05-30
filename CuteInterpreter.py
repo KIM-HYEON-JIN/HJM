@@ -367,7 +367,6 @@ class CuteInterpreter(object):
             if node is None:return True
             return False
 
-
         if func_node.type is TokenType.DEFINE:
             rhs1 = self.run_expr(rhs1).value
             rhs2 = self.run_expr(rhs2)
